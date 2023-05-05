@@ -28,6 +28,9 @@ if k > 0:
 else : 
     print (f' Число {number} не встречается в списке')
     
-m = array.count (number)
+# m = array.count (number)
+# print (m)
 
-print (m)
+# for t in range (num+1):
+# array.append (int(input ()))
+# print (array)
