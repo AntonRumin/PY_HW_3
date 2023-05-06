@@ -9,19 +9,17 @@
 print (' - - - Подсчет баллов за буквы слова - - - ')
 
 letter_dict = {"AEIOULNSTRАВЕИНОРСТ": 1, "DGДКЛМПУ": 2, "BCMPБГЁЬЯ": 3, "FHVWYЙЫ": 4, "KЖЗХЦЧ": 5, "JXЭЮ": 8, "QZФЩЪ": 10}
-#letter_dict = {"NM": 1,"A": 2}
+
 word = input ('Введите слово: ')
-#print (letter_dict[word])
-print (letter_dict.items())
+
+
 sum = 0
-#print (word.upper())
+
 for letter in word.upper():
-    #print (letter)
+    
     for key in letter_dict.items():
-        #print (key)
-        #print (key[0])
-        #print (key[1])
+    
         if letter in key [0]:
             sum += key [1]
-            #print (sum)
-print (sum)
+            
+print (f'Сумма значений для соответствующх букв слова равна {sum}')
